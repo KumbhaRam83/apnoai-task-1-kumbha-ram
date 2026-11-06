@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripMate - Smart Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+       <div class="logo">TripMate</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <header id="home" class="hero">
+        <h1>Explore More, Spend Less!</h1>
+
+<p>
+    Discover amazing destinations, plan your perfect trip,
+    and enjoy unforgettable adventures without breaking your budget.
+</p>
+
+<a href="#about" class="btn">Start Exploring</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+       <h2>About TripMate</h2>
+
+<p>
+    TripMate is a smart travel planning platform designed
+    to make travelling simple, affordable, and enjoyable.
+    We help travelers discover amazing destinations and
+    organize their perfect journeys.
+</p>
+
+<p>
+    Whether you are planning a solo adventure, a family
+    vacation, or a trip with friends, TripMate helps you
+    find destinations, manage your budget, and create
+    unforgettable travel experiences.
+</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container alt-bg">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+               <h3>Smart Trip Planning</h3>
+<p>Plan personalized trips with customized itineraries based on your destination, budget, and travel duration.</p>
+            </div>
+            <div class="service-card">
+               <h3>Explore Destinations</h3>
+<p>Discover beautiful destinations, hidden gems, famous attractions, and exciting places around the world.</p>
+            </div>
+            <div class="service-card">
+               <h3>Budget & Travel Deals</h3>
+<p>Estimate your travel expenses and discover affordable hotels, transportation, and exciting travel deals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+
+<p>Email: tripmate@example.com</p>
+
+<p>Phone: +91 1234567890</p>
+
+<p>Have questions or planning your next adventure?
+Contact our team. We would love to help you!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kumbharam. Built for ApnoAI Internship Task 1.</p>
+    </footer>
+    <script>
+    const toggle = document.getElementById("theme-toggle");
+
+    toggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggle.innerHTML = "☀️ Light Mode";
+        } else {
+            toggle.innerHTML = "🌙 Dark Mode";
+        }
+    });
+</script>
+</body>
+</html>
